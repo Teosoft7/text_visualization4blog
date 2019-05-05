@@ -1,0 +1,396 @@
+Greg Damico [7:24 AM]
+Please clone before this morning's lesson! https://github.com/learn-co-students/CLT-and-CIs
+learn-co-students/CLT-and-CIs
+Language
+Jupyter Notebook
+Last updated
+a minute ago
+learn-co-students/CLT-and-CIsApr 29thAdded by GitHub
+
+Alec Morgan [7:59 AM]
+@Slackbot Reminder: Good morning! After you arrive in # seattle-ds-040119, please take a moment to remind everyone to log their attendance. You are under the threat of the channel admins reprogramming you!
+
+Slackbot [8:00 AM]
+Reminder: Good morning! After you arrive on campus, please take a moment to log your attendance. You are on your honor! https://docs.google.com/spreadsheets/d/1mpLuYOuDzYYu_B1jsjIGHUgFtezJ9k4Gsd0bIm9r9H4/edit#gid=0
+
+Miles Erickson [8:04 AM]
+Good morning @channel!
+
+This Tuesday evening, Flatiron School is hosting an event that's closely related to what we're studying: a panel discussion on ethics and responsibility in deep learning, with an emphasis on natural language processing.
+
+The moderators are our very own Sherry and Mia.
+
+If you have friends who are curious about what you're up to here, please invite them!
+
+https://www.meetup.com/Seattle-FlatironSchoolStudy/events/260683537/ (edited) 
+
+Kaspar [9:41 AM]
+I added another `for` loop to show how this "grows closer to the normal bell curve" over time:
+```for i in range(1, 10):
+    means = []
+    for _ in range(5*2**i):
+        means.append(np.mean(stats.expon.rvs(size=100)))
+
+    # Let's make a histogram. Suppose we choose about 50 bins.
+
+    plt.hist(means, bins=50)
+    plt.title(f"{5 * 2 ** i} repeated samples (size=100) of the pop")
+    plt.show()```
+this will double the number of times that we sample the population, starting from using 10 samples, and then doubling this number 9 more times (edited) 
+
+Kaspar [10:07 AM]
+could we set timers for blogs this time? I don't want to accidentally use up lunch time again.
+
+Brian Mcgarry [10:08 AM]
+quick helpful overview of the central limit theorem: https://www.youtube.com/watch?v=YAlJCEDH2uY
+YouTubeStatQuest with Josh Starmer
+The Central Limit Theorem
+
+Pat [12:39 PM]
+https://www.youtube.com/watch?v=jYa1eI1hpDE
+YouTubeTaylorSwiftVEVO
+Taylor Swift - Mean
+
+Pat [1:07 PM]
+mr confidence interval
+Pasted image at 2019-04-29, 1:06 PM 
+
+
+Alex Shropshire [1:25 PM]
+Hi classmates! My Airbnb host for June cancelled on me this morning, so I'm actively looking for open rooms for the month of June. Please reach out if you know of any availabilities or leads for sublets/airbnbs/short-term rentals/etc in the Seattle area. Ideally speaking, it would be a private room & bathroom, but at this point anything with a solid roof & commutable to class does the trick. Please message me if you know of anything! Thanks!
+
+Kena Jalodara [3:25 PM]
+https://www.statisticshowto.datasciencecentral.com/t-statistic/ - for T statistics and Z score
+Statistics How To
+T Statistic: Definition, Types and Comparison to Z Score - Statistics How To
+T Statistic: Definition of the T Statistic. When to use it in statistic. Types of T Tests and Comparisons to Z Tests and Z Scores. Free online calculators.
+Sep 25th, 2013
+
+Cristian E. Nuno [3:29 PM]
+Checkout this SO post on how to use `Tab` to autocomplete a git branch name in the terminal! https://apple.stackexchange.com/a/55886. No more typing out the branch names by hand anymore :party_porg: (edited) 
+Ask Different
+git auto-complete for *branches* at the command line?
+On my Linux machine I have autocomplete for branches with Git. [Note we are talking about git branch completion, not bash completion (e.g. commands, files, etc). Thus NOT Lane's answer at all] For
+
+Kena Jalodara [3:33 PM]
+Types of statistical tests - https://cyfar.org/types-statistical-tests
+
+Kena Jalodara [4:05 PM]
+Hypothesis Testing - https://stattrek.com/hypothesis-test/hypothesis-testing.aspx
+stattrek.com
+Hypothesis Tests
+What are hypothesis tests? Covers null and alternative hypotheses, decision rules, Type I and II errors, power, one- and two-tailed tests, region of rejection.
+
+Cristian E. Nuno [4:20 PM]
+set up a reminder to “check when their presenting blogs at https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567. Post the link to your blog here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing” in this channel at 5PM every weekday, Pacific Daylight Time.
+
+Slackbot [5:00 PM]
+Reminder: check when their presenting blogs at https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567. Post the link to your blog here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing
+
+Kaspar [5:03 PM]
+for my blog, I'm trying to generate "fake" data with `np.random` to simulate y=A*B^x and another with y=A*x^n   (exponential vs power model)  what is the best way to do this so that I don't get a "perfect line" of scatterpoint plots, but rather something that looks more realistic
+
+edit:  or maybe it's better to just use *actual* data instead of wasting time trying to simulate something. Thoughts? (edited) 
+
+Cristian E. Nuno [5:05 PM]
+set up a reminder “reminder to check blogs presentation schedule at https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567. Post the link to your blog here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing at 5PM every weekday” in this channel at 9AM every day, Pacific Daylight Time.
+
+Sherry [9:25 PM]
+Hey there everyone :slightly_smiling_face: tomorrow night Miles, Greg, Cristian and Kena got together 3 speakers to talk about ethics in AI @6:30pm - dope. It's not just an event that's happening, it's kind of _our_ event because it's being promoted as a Seattle Flatiron Data Science event. And we are the original data science cohort! I'd love to see us there. Also, this was an interesting article that came out yesterday: https://www.wired.com/story/will-artificial-intelligence-enhance-hack-humanity/
+WIRED
+Will Artificial Intelligence Enhance or Hack Humanity?
+Historian Yuval Noah Harari and computer scientist Fei-Fei Li discuss the promise and perils of the transformative technology with WIRED editor in chief Nicholas Thompson.
+
+Greg Damico [7:33 AM]
+Hypothesis testing: https://github.com/learn-co-students/hyp-testing-ds-040119
+learn-co-students/hyp-testing-ds-040119
+Language
+Jupyter Notebook
+Last updated
+a minute ago
+learn-co-students/hyp-testing-ds-040119Apr 30thAdded by GitHub
+
+Slackbot [8:00 AM]
+Reminder: Good morning! After you arrive on campus, please take a moment to log your attendance. You are on your honor! https://docs.google.com/spreadsheets/d/1mpLuYOuDzYYu_B1jsjIGHUgFtezJ9k4Gsd0bIm9r9H4/edit#gid=0
+
+Kaspar [9:11 AM]
+does anyone have a blog from project week that explains how to do log transforms? I need to link to it in mine
+
+Hussein [10:21 AM]
+Happy Birthday !! :slightly_smiling_face: @Mando Iwanaga
+
+Slackbot [12:08 PM]
+Hey @channel:
+After Greg's lecture this afternoon, please work in pairs to complete the A/B Testing Lab: https://learn.co/tracks/data-science-career-v1-1/module-2-advanced-data-retrieval-and-analysis/section-20-hypothesis-and-ab-testing/a-b-testing-lab. 
+Visit http://flatiron-learn-together.herokuapp.com/cohorts/104/activities/2641 to see your assigned groups.
+
+Cristian E. Nuno [1:02 PM]
+Here's a helpful infographic about z-scores: https://mathbitsnotebook.com/Algebra2/Statistics/STzScores.html
+
+Cristian E. Nuno [1:17 PM]
+Reminder that standard deviation & variance are related, but not the same: https://stats.stackexchange.com/a/35124/206795
+Cross Validated
+What's the difference between variance and standard deviation?
+I was wondering what the difference between the variance and the standard deviation is. If you calculate the two values, it is clear that you get the standard deviation out of the variance, but w...
+
+Kaspar [1:29 PM]
+I found this as well:  https://www.animatedsoftware.com/statglos/sgrelabp.htm
+animatedsoftware.com
+Internet Glossary of Statistical Terms by Dr. Howard S. Hoffman
+
+Kena Jalodara [1:31 PM]
+Point Estimation and Confidence Interval -https://people.richland.edu/james/lecture/m170/ch08-int.html (edited) 
+
+Kaspar [1:43 PM]
+so, in Step 4: Calculating n requires us to know the variance ... but then later they tell us to use `var = n * p * (1 - p)` so now we need to know n to get var, which we use to find n. This seems like circular logic, what are we missing?
+
+Cristian E. Nuno [2:23 PM]
+Very cool & very scary: https://textio.com/products/flow/
+Textio
+Textio Flow | Let’s write the future
+Textio Flow is a new augmented writing technology that lets your team compose more powerful content in a fraction of the time.
+
+mia [2:46 PM]
+wanna *maybe* go to trivia tomorrow? look at this thread so we can talk deets.
+
+Kaspar [3:07 PM]
+handy little list comprehension for the "One Sample T-Test - Lab" at the very bottom where: The researcher realizes that she accidentally recorded the score that should have been 80.9 as 90.9.
+`corrected = [x if x != 90.9 else 80.9 for x in sample]`
+
+Kaspar [4:01 PM]
+@Hussein and I were chatting, and since t* seems important at very small values (OR when we don't know pop_std_dev) but @ larger values, Z* and t* converge on top of each other anyway, is there any harm in just ALWAYS using t* for everything?
+
+Miles Erickson [4:12 PM]
+What happens when you always set _alpha_ to .05?
+https://xkcd.com/1132/
+xkcd
+Frequentists vs. Bayesians
+[Title text] "'Detector! What would the Bayesian statistician say if I asked him whether the--' [roll] 'I AM A NEUTRINO DETECTOR, NOT A LABYRINTH GUARD. SERIOUSLY, DID YOUR BRAIN FALL OUT?' [roll] '... yes.'"
+
+Pat [4:16 PM]
+Is there a consensus on sns.displot chucking ’future_warnings’s and/or what to do about it???
+
+Alec Morgan [4:38 PM]
+Budding young artist's color illustration of the elusive rainbow camel, or a goof I made with Pandas? You decide!
+PNG 
+rainbow_camel.png
+736 kB PNG — Click to open original
+
+Jacob Crabb [5:50 PM]
+in case anyone wishes to preview https://medium.com/@alludedwinter/foiled-again-a-brief-discussion-on-folium-2258db4c9d7f
+
+Slackbot [8:00 AM]
+Reminder: Good morning! After you arrive on campus, please take a moment to log your attendance. You are on your honor! https://docs.google.com/spreadsheets/d/1mpLuYOuDzYYu_B1jsjIGHUgFtezJ9k4Gsd0bIm9r9H4/edit#gid=0
+
+Jacob Crabb [8:09 AM]
+in case anybody might be affected https://patch.com/washington/seattle/may-day-2019-seattle-area-heres-what-expect
+Seattle, WA Patch
+May Day 2019 In The Seattle Area: Here's What To Expect
+May Day in Puget Sound can sometimes get violent, but at minimum there will be traffic disruptions due to parades and protests.
+Apr 30th
+
+Miles Erickson [8:41 AM]
+Special thanks to @Kayli Leung for filing this ticket pointing out a very technical important error in the text re Bayes Theorem:
+https://github.com/learn-co-curriculum/dsc-2-21-12-PE-MAP/issues/1
+
+We'll get it fixed.
+
+In the meantime, please refer to this authoritative reference:
+https://en.wikipedia.org/wiki/Bayes%27_theorem#Statement_of_theorem (edited) 
+Wikipedia
+Bayes' theorem
+In probability theory and statistics, Bayes' theorem (alternatively Bayes' law or Bayes' rule) describes the probability of an event, based on prior knowledge of conditions that might be related to the event. For example, if cancer is related to age, then, using Bayes' theorem, a person's age can be used to more accurately assess the probability that they have cancer, compared to the assessment of the probability of cancer made without knowledge of the person's age.
+One of the many applications of Bayes' theorem is Bayesian inference, a particular approach to statistical inference. When applied, the probabilities involved in Bayes' theorem may have different probability interpretations. With the Bayesian probability interpretation the theorem expresses how a degree of belief, expressed as a probability, should rationally change to account for availability of related evidence. Bayesian inference is fundamental to Bayesian statistics.
+Bayes' theorem is named after Reverend Thomas Bayes (; 1701?–1761), who first used conditional probability to provide an algorithm (his Proposition 9) that uses evidence to calculate limits on an unknown parameter, published as  An Essay towards solving a Problem in the Doctrine of Chances (1763). In what he called a scholium, Bayes extended his algorithm to any unknown prior cause.  Independently of Bayes, Pierre-Simon Laplace in 1774, and later in his 1812 "Théorie analytique des probabilités" used conditional probability to formulate the relation of an updated posterior probability from a prior probability, given evidence. Sir Harold Jeffreys put Bayes's algorithm and Laplace's formulation on an axiomatic basis. Jeffreys wrote that Bayes' theorem "is to the theory of probability what the Pythagorean theorem is to geometry".
+Show less
+
+Greg Damico [8:41 AM]
+https://github.com/learn-co-students/bayes-ds040119
+learn-co-students/bayes-ds040119
+Language
+Jupyter Notebook
+Last updated
+a minute ago
+learn-co-students/bayes-ds040119Yesterday at 8:40 AMAdded by GitHub
+
+Slackbot [9:00 AM]
+Reminder: reminder to check blogs presentation schedule at https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567. Post the link to your blog here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing at 5PM every weekday.
+
+Cristian E. Nuno [9:28 AM]
+set up a reminder to “check blogs presentation schedule (https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567)                                  
+
+
+Post blog links here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing” in this channel at 5PM every weekday, Pacific Daylight Time.
+
+Pat [9:42 AM]
+giphy.gif 
+
+
+mia [9:47 AM]
+“You are the goat!”
+Glenn Calkins
+Western State College
+^This guy trying to insult Marylin but now it reads as a compliment. :joy:
+
+Slackbot [9:55 AM]
+Hey @channel:
+between now and lunch, please work on the Monty Hall lab in pairs (https://learn.co/tracks/data-science-career-v1-1/module-2-advanced-data-retrieval-and-analysis/section-21-combinatorics-continued-and-maximum-likelihood-estimation/the-monty-hall-problem-lab).
+Visit http://flatiron-learn-together.herokuapp.com/cohorts/104/activities/2654 to see your assigned groups.
+
+Kaspar [10:19 AM]
+when they ask us to find P(H), isn't that just 100%, as it is stated to be assumed in the first sentance of Part B? Why are we assuming something, then calculating the chances of something that has already happened?
+The Law of Total Probability seems unnecessary, but they are inviting us to use it (edited) 
+
+Jacob Crabb [12:45 PM]
+https://www.nerdsandnibblers.com/
+
+Cristian E. Nuno [12:52 PM]
+Did someone mention rubber ducking!?
+https://en.wikipedia.org/wiki/Rubber_duck_debugging
+Wikipedia
+Rubber duck debugging
+In software engineering, rubber duck debugging is a method of debugging code. The name is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug their code by forcing themselves to explain it, line-by-line, to the duck. Many other terms exist for this technique, often involving different inanimate objects.
+Many programmers have had the experience of explaining a problem to someone else, possibly even to someone who knows nothing about programming, and then hitting upon the solution in the process of explaining the problem. In describing what the code is supposed to do and observing what it actually does, any incongruity bet… Show more
+
+Miles Erickson [12:59 PM]
+https://github.com/learn-co-students/nlp-intro_seattle-ds-career-040119
+learn-co-students/nlp-intro_seattle-ds-career-040119
+Language
+Jupyter Notebook
+Last updated
+26 minutes ago
+learn-co-students/nlp-intro_seattle-ds-career-040119Yesterday at 12:26 PMAdded by GitHub
+
+Kevin Rex [1:58 PM]
+Heres the book yall
+Pasted image at 2019-05-01, 1:58 PM 
+
+
+Miles Erickson [1:59 PM]
+Here's the other book ($10 or free, depending on your personal situation):
+https://jeffknupp.com/writing-idiomatic-python-ebook/
+jeffknupp.com
+Writing Idiomatic Python Book
+A Python book for learning to write idiomatic code
+
+Alec Morgan [2:01 PM]
+https://medium.com/@alecnmorgan/visualizing-beyond-3-dimensions-67531b431119
+
+Jacob Crabb [2:35 PM]
+is there a way to find blogs of people you follow on medium short of searching the individual titles?
+
+Greg Damico [3:03 PM]
+A general word of caution: It's best (for now) to avoid using 'data scientist' to describe yourself on LinkedIn, unless you've actually held that job title before. Precisely because it sounds more like a job title than an answer to a question about your hobbies, employers may feel a bit duped if they encounter folks without that title advertising themselves as such.
+
+None of this answers the question about how you _should_ portray yourself, which, I admit, is not totally straightforward. But 'data science student' works pretty well (and has far less risk of misleading anyone).
+
+mia [3:13 PM]
+Does anyone know how to make a video recording (.mov file) in Quicktime and then export it as a gif (so I can post it to my Medium blog)?
+
+Brian Mcgarry [3:30 PM]
+https://github.com/Bmcgarry194/sampling
+Bmcgarry194/sampling
+Markov Chain Monte Carlo or How I Learned to Stop Worrying and Love the Sampler
+Language
+Jupyter Notebook
+Last updated
+a few seconds ago
+Bmcgarry194/samplingApr 23rdAdded by GitHub
+
+Brian Mcgarry [3:30 PM]
+hey all starting up the bonus lecture on sampling in borg in a few minutes
+
+Cristian E. Nuno [4:53 PM]
+Hey y'all: we're about to add two events to your calendar but we managed to get PuPPy (https://twitter.com/ps_python?lang=en) to come to Flatiron tomorrow and on May 20th!
+
+• May 2nd: https://www.meetup.com/PSPPython/events/261061887/ (programming night)
+• May 20th: https://www.meetup.com/PSPPython/events/261030549/ (interview practice night)
+
+More information in both the meetup links and in the Google calendar invites. (edited) 
+
+Slackbot [5:00 PM]
+Reminder: check blogs presentation schedule (https://docs.google.com/spreadsheets/d/1naGaeDJ1Te4bYx5O7R-nRFLXIX_C5mQABB30zt3Aps4/edit#gid=111280567)                                  
+
+
+Post blog links here: https://docs.google.com/spreadsheets/d/1X5-TeGM4IggOK5a4X2jDm5UR-HAsg6z-IsRiuhb1hEw/edit?usp=sharing
+
+mia [5:56 PM]
+happy anniversary
+Posted using /giphy | GIF by Robert E Blackmon
+
+mia [5:56 PM]
+if you want to join in for our one-month anniversary trivia outing, we’ll be leaving soon. :slightly_smiling_face:
+
+mia [5:57 PM]
+let me know if you have any questions. i can answer questions about trivia well but not answer trivia questions well.
+
+Miles Erickson [7:44 AM]
+Reading about TF/IDF? Want a simpler understanding of the intuition behind inverse document frequency? Try this...
+
+https://moz.com/blog/inverse-document-frequency-and-the-importance-of-uniqueness (edited) 
+
+Slackbot [8:00 AM]
+Reminder: Good morning! After you arrive on campus, please take a moment to log your attendance. You are on your honor! https://docs.google.com/spreadsheets/d/1mpLuYOuDzYYu_B1jsjIGHUgFtezJ9k4Gsd0bIm9r9H4/edit#gid=0
+
+Miles Erickson [8:37 AM]
+PuPPy is having a casual "programming night" event tonight on campus: https://www.meetup.com/PSPPython/events/261061887/
+
+I recommend these events highly. They seem unremarkable, yet, as time passes, you might find yourself hiring (or getting recruited by) people who you originally met at Programming Night. (edited) 
+[edit: removed Slack auto-previews of web sites linked above]
+
+mia [9:01 AM]
+I think lecture starts at 9:20, right @Miles Erickson?
+
+mia [9:01 AM]
+Some people have 9am on their calendars still.
+
+Kaspar [9:03 AM]
+yeah, I was wrong, it's 9:20.  staff is all in a meeting in Turing right now
+
+Miles Erickson [9:18 AM]
+replied to a thread:
+Yes. Sorry for the confusion. It was 9:20 due to a 9:00 staff meeting, then I changed it to 9:00 because I _thought_ the meeting had been rescheduled...
+
+...but I was wrong, so I changed it back to 9:20.
+
+If you thought it was at 9:00, you're not crazy!
+p.s. Yesterday afternoon's notebook is here:
+https://github.com/learn-co-students/nlp-intro_seattle-ds-career-040119/blob/master/nlp_intro.ipynb
+nlp_intro.ipynb
+```
+{
+"cells": [
+ {
+  "cell_type": "code",
+ Show more
+learn-co-students/nlp-intro_seattle-ds-career-040119Added by GitHub
+
+Kaspar [9:35 AM]
+From Desmos, the online calculator Greg shared earlier in the curriculum:  The X-coordinate = cos(angle) while the Y-coordinate = sin(angle)
+https://www.desmos.com/calculator/qmzx2skkzy
+Desmos Graphing Calculator
+Trigonometry: Unit Circle
+Trigonometry: Unit Circle
+
+Alec Morgan [9:36 AM]
+This might help with visualizing (as in imagining) vectors in higher dimensions: https://youtu.be/zwAD6dRSVyI (edited) 
+YouTube3Blue1Brown
+Thinking visually about higher dimensions
+
+Miles Erickson [10:05 AM]
+*Read this*
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+karpathy.github.io
+The Unreasonable Effectiveness of Recurrent Neural Networks
+Musings of a Computer Scientist.
+
+Miles Erickson [10:13 AM]
+:point_up: It's completely reasonable not to understand the technical content of this article at this point. I still ~want~ _need_ you to read it. It will give you an anchor for things that you'll understand later. _Read the examples_. (edited) 
+
+Natasha Kacoroski [11:14 AM]
+On machine learning algorithm… https://youtu.be/R9OHn5ZF4Uo
+YouTubeCGP Grey
+How Machines Learn
+
+Pat [11:37 AM]
+Sure lunch is cool, but have you tried VIAGRA!?!?
